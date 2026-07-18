@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Didáctica Aplicada: Bitácora Crítica - MIC Quito</title>
+    <title>Didáctica General: Bitácora Crítica de Campo - MIC</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome para íconos interactivos -->
@@ -45,7 +45,7 @@
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased">
 
-    <!-- BARRA DE NAVEGACIÓN STICKY (Criterio de excelente navegación 10%) -->
+    <!-- BARRA DE NAVEGACIÓN STICKY -->
     <nav class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
@@ -60,9 +60,9 @@
                 </div>
                 <div class="hidden md:flex space-x-1">
                     <a href="#inicio" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors">Inicio</a>
-                    <a href="#salas" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors">Salas e Instantes</a>
-                    <a href="#teorias" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors">Teorías Educativas</a>
-                    <a href="#analisis" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors">Análisis Crítico</a>
+                    <a href="#recorrido" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors">Recorrido Empírico</a>
+                    <a href="#teorias" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors">Modelos Didácticos</a>
+                    <a href="#analisis" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors">Ensayo Crítico</a>
                     <a href="#bibliografia" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors">Referencias</a>
                 </div>
                 <div class="flex items-center gap-2">
@@ -72,32 +72,31 @@
                 </div>
             </div>
         </div>
-        <!-- Barra de progreso de lectura interactiva (Criterio: Creatividad) -->
         <div id="scroll-progress" class="h-[2px] bg-gradient-to-r from-emerald-500 via-indigo-500 to-emerald-500 w-0 transition-all duration-75"></div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <header id="inicio" class="relative overflow-hidden pt-12 pb-24 border-b border-slate-900 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950">
+    <!-- HERO HEADER -->
+    <header id="inicio" class="relative overflow-hidden pt-12 pb-20 border-b border-slate-900 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950">
         <div class="absolute top-0 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl -z-10"></div>
         <div class="absolute bottom-10 right-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl -z-10"></div>
 
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <span class="text-xs font-semibold tracking-widest text-emerald-400 uppercase bg-emerald-400/10 px-3 py-1 rounded-full inline-block mb-4">
-                Bitácora Digital de Campo y Portafolio de Examen
+                Bitácora de Campo y Portafolio de Expresión Epistemológica
             </span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-                El Museo como Espacio de <br/>
+            <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                Transposición Didáctica e Inmersión Sensorial: <br/>
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-indigo-400">
-                    Transposición Didáctica Activa
+                    El Aprendizaje Crítico en el MIC
                 </span>
             </h1>
-            <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-8 font-light leading-relaxed">
-                Análisis didáctico y evidencias empíricas de la visita pedagógica al 
-                <strong class="text-emerald-300 font-medium">Museo Interactivo de Ciencias (MIC) de Quito</strong>, 
-                Chimbacalle. Una exploración bajo los modelos cognitivista, constructivista e histórico-cultural.
+            <p class="text-base md:text-lg text-slate-300 max-w-3xl mx-auto mb-8 font-light leading-relaxed">
+                Análisis fenomenológico y evidencias empíricas de la visita pedagógica al 
+                <strong class="text-emerald-300 font-medium">Museo Interactivo de Ciencias (MIC) de Quito</strong>. 
+                Una contrastación de la práctica de campo bajo los modelos cognitivista, constructivista e histórico-cultural.
             </p>
 
-            <!-- Datos Oficiales del Estudiante -->
+            <!-- Datos Institucionales Oficiales -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 bg-slate-900/60 rounded-2xl border border-slate-800/80 backdrop-blur max-w-4xl mx-auto text-left">
                 <div>
                     <p class="text-[10px] text-slate-400 uppercase tracking-wider font-mono">Asignatura</p>
@@ -119,270 +118,362 @@
         </div>
     </header>
 
-    <!-- SECCIÓN 1: EVIDENCIAS MULTIMEDIA (Criterio: Evidencias de la visita 10% & Creatividad 15%) -->
-    <section id="salas" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white">Evidencias de la Visita y Recorrido Didáctico</h2>
-            <div class="w-16 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
-            <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
-                Registro empírico de las salas del MIC. Configurado con reproductores nativos ideales para tus videos cortos (menos de 10 segundos) que ilustran la interacción directa.
+    <!-- SECCIÓN 1: CRÓNICA VISUAL Y EVIDENCIAS DE LAS SALAS -->
+    <section id="recorrido" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-white">Estructura del Recorrido y Evidencias Empíricas</h2>
+            <div class="w-16 h-1 bg-emerald-500 mx-auto mt-3 rounded-full"></div>
+            <p class="text-slate-400 mt-3 max-w-2xl mx-auto text-sm">
+                Registro fiel de la trayectoria interactiva del estudiante de 23 años por las salas del MIC, enfocado en espacios de problematización social, física, patrimonial y ambiental.
             </p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8">
-            <!-- TARJETA 1: SALA LUDIÓN -->
-            <div class="bg-slate-900/40 rounded-3xl border border-slate-800 overflow-hidden hover:border-slate-700 transition-all duration-300 flex flex-col justify-between">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- TARJETA 1: ZONA ABIERTA -->
+            <div class="bg-slate-900/40 rounded-2xl border border-slate-800 overflow-hidden hover:border-slate-700 transition-all duration-300 flex flex-col justify-between">
                 <div>
-                    <div class="relative bg-slate-950 p-1">
-                        <video class="w-full h-64 object-cover rounded-2xl" autoplay loop muted playsinline>
-                            <source src="video-ludion.mp4" type="video/mp4">
-                        </video>
-                        <span class="absolute top-4 left-4 bg-slate-900/85 backdrop-blur px-3 py-1 rounded-full text-xs font-mono text-emerald-400 border border-emerald-500/30">
-                            <i class="fa-solid fa-play mr-1"></i> Video: Autoreproducción en Bucle
+                    <div class="relative bg-slate-950">
+                        <img src="foto-zona-abierta.jpg" alt="Zona Abierta MIC" class="w-full h-48 object-cover">
+                        <span class="absolute top-3 left-3 bg-slate-900/90 backdrop-blur px-2.5 py-0.5 rounded-full text-[11px] font-mono text-emerald-400 border border-emerald-500/20">
+                            Fase 1: Entorno Exterior
                         </span>
                     </div>
-                    <div class="p-6">
-                        <span class="text-[10px] font-mono uppercase tracking-widest text-indigo-400">Física Clásica y Mecánica</span>
-                        <h3 class="text-2xl font-bold text-white mt-1 mb-3">Sala "Ludión"</h3>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
-                            Esta sala se compone de módulos interactivos que exponen principios de electromagnetismo, máquinas simples y cinemática. En el registro se observa la experimentación con el módulo de equilibrio de fuerzas y palancas. La acción física directa sobre el aparato provoca una reformulación inmediata de las preconcepciones lógicas del sujeto en aprendizaje.
+                    <div class="p-5">
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-indigo-400">Percepción Cinemática</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Entorno Abierto y Remolino Óptico</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            El recorrido inicia en las extensas áreas verdes exteriores del museo, caracterizadas por estructuras macro-lúdicas de metal para jóvenes y el gran disco giratorio metálico con patrones calados (remolino). Este elemento genera efectos mecánicos de persistencia retiniana e ilusiones ópticas al interactuar con el viento, el relieve de Quito y la luz solar.
                         </p>
                     </div>
                 </div>
-                <div class="p-6 pt-0 border-t border-slate-800/50 mt-auto bg-slate-950/20 flex justify-between items-center text-xs font-mono text-slate-400">
-                    <span><i class="fa-solid fa-location-dot text-emerald-400 mr-1"></i> Ala Norte - MIC</span>
-                    <span>Módulo: Palanca de Arquímedes</span>
+                <div class="p-4 bg-slate-950/40 text-[11px] font-mono text-slate-500 border-t border-slate-800 flex justify-between">
+                    <span>Espacio Libre Exterior</span>
+                    <span>Remolino Cinético</span>
                 </div>
             </div>
 
-            <!-- TARJETA 2: SALA EXCESIVAMENTE -->
-            <div class="bg-slate-900/40 rounded-3xl border border-slate-800 overflow-hidden hover:border-slate-700 transition-all duration-300 flex flex-col justify-between">
+            <!-- TARJETA 2: EXCESIVAMENTE -->
+            <div class="bg-slate-900/40 rounded-2xl border border-slate-800 overflow-hidden hover:border-slate-700 transition-all duration-300 flex flex-col justify-between">
                 <div>
-                    <div class="relative bg-slate-950 p-1">
-                        <video class="w-full h-64 object-cover rounded-2xl" autoplay loop muted playsinline>
-                            <source src="video-excesivamente.mp4" type="video/mp4">
-                        </video>
-                        <span class="absolute top-4 left-4 bg-slate-900/85 backdrop-blur px-3 py-1 rounded-full text-xs font-mono text-emerald-400 border border-emerald-500/30">
-                            <i class="fa-solid fa-play mr-1"></i> Video: Autoreproducción en Bucle
+                    <div class="relative bg-slate-950">
+                        <img src="foto-excesivamente.jpg" alt="Sala Excesivamente" class="w-full h-48 object-cover">
+                        <span class="absolute top-3 left-3 bg-slate-900/90 backdrop-blur px-2.5 py-0.5 rounded-full text-[11px] font-mono text-emerald-400 border border-emerald-500/20">
+                            Fase 2: Neurociencia
                         </span>
                     </div>
-                    <div class="p-6">
-                        <span class="text-[10px] font-mono uppercase tracking-widest text-indigo-400">Neurociencias y Percepción</span>
-                        <h3 class="text-2xl font-bold text-white mt-1 mb-3">Sala "Excesivamente"</h3>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
-                            Centrada en el cerebro, las neuronas y los sesgos perceptivos. El video ilustra la prueba de ilusiones ópticas táctiles y visuales. El visitante interactúa con espejos deformantes y cuartos asimétricos que obligan al cerebro a procesar incongruencias sensoriales, generando un conflicto de asimilación cognitiva ideal para estudiar la metacognición del aprendizaje.
+                    <div class="p-5">
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-indigo-400">Metacognición y Afecto</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Sala "Excesivamente"</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Enfoque directo en la neurociencia y el funcionamiento cerebral. Destacan los paneles interactivos basados en palabras y las tablas dinámicas complejas que representan, miden y clasifican los espectros de las emociones humanas. Su interacción permite analizar cómo el cerebro procesa estímulos afectivos y lingüísticos a nivel cognitivo.
                         </p>
                     </div>
                 </div>
-                <div class="p-6 pt-0 border-t border-slate-800/50 mt-auto bg-slate-950/20 flex justify-between items-center text-xs font-mono text-slate-400">
-                    <span><i class="fa-solid fa-location-dot text-emerald-400 mr-1"></i> Pabellón Central - MIC</span>
-                    <span>Módulo: Ilusión de Cámara de Ames</span>
+                <div class="p-4 bg-slate-950/40 text-[11px] font-mono text-slate-500 border-t border-slate-800 flex justify-between">
+                    <span>Pabellón de la Mente</span>
+                    <span>Tablas de Emociones</span>
                 </div>
             </div>
 
-            <!-- TARJETA 3: SALA AWAWA (Renovación contemporánea) -->
-            <div class="bg-slate-900/40 rounded-3xl border border-slate-800 overflow-hidden hover:border-slate-700 transition-all duration-300 flex flex-col justify-between">
+            <!-- TARJETA 3: CONCIENCIA AMBIENTAL Y CALENTAMIENTO GLOBAL -->
+            <div class="bg-slate-900/40 rounded-2xl border border-slate-800 overflow-hidden hover:border-slate-700 transition-all duration-300 flex flex-col justify-between">
                 <div>
-                    <div class="relative bg-slate-950 p-1">
-                        <video class="w-full h-64 object-cover rounded-2xl" autoplay loop muted playsinline>
-                            <source src="video-awawa.mp4" type="video/mp4">
-                        </video>
-                        <span class="absolute top-4 left-4 bg-slate-900/85 backdrop-blur px-3 py-1 rounded-full text-xs font-mono text-emerald-400 border border-emerald-500/30">
-                            <i class="fa-solid fa-play mr-1"></i> Video: Autoreproducción en Bucle
+                    <div class="relative bg-slate-950">
+                        <img src="foto-calentamiento.jpg" alt="Sala Calentamiento Global" class="w-full h-48 object-cover">
+                        <span class="absolute top-3 left-3 bg-slate-900/90 backdrop-blur px-2.5 py-0.5 rounded-full text-[11px] font-mono text-emerald-400 border border-emerald-500/20">
+                            Fase 3: Ecología Crítica
                         </span>
                     </div>
-                    <div class="p-6">
-                        <span class="text-[10px] font-mono uppercase tracking-widest text-indigo-400">Pedagogía Activa y Primera Infancia</span>
-                        <h3 class="text-2xl font-bold text-white mt-1 mb-3">Sala "AWAWA"</h3>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
-                            La nueva sala "AWAWA" (reemplazo contemporáneo de Sala Guaguas) está diseñada bajo la neurociencia de las emociones y el árbol como metáfora de crecimiento. Su estructura lúdica e interactiva fomenta el juego libre y la exploración táctil del ecosistema de Quito. Permite evidenciar de forma pura las fases sensoriomotoras y preoperacionales del desarrollo del niño.
+                    <div class="p-5">
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-indigo-400">Problematización Social</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Cuenta Regresiva y Chimeneas</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Espacio de reflexión socioambiental de alto impacto. Cuenta con un marcador digital dinámico que proyecta la cuenta regresiva crítica para detener el aumento irreversible del calentamiento global, complementado por estructuras monumentales de chimeneas industriales y la infografía científica interactiva "No solo las chimeneas emiten gases".
                         </p>
                     </div>
                 </div>
-                <div class="p-6 pt-0 border-t border-slate-800/50 mt-auto bg-slate-950/20 flex justify-between items-center text-xs font-mono text-slate-400">
-                    <span><i class="fa-solid fa-location-dot text-emerald-400 mr-1"></i> Planta Baja - MIC</span>
-                    <span>Recurso: Domo Biodiverso Lúdico</span>
+                <div class="p-4 bg-slate-950/40 text-[11px] font-mono text-slate-500 border-t border-slate-800 flex justify-between">
+                    <span>Eje de Crisis Climática</span>
+                    <span>Panel de Gases de Efecto Invernadero</span>
                 </div>
             </div>
 
-            <!-- TARJETA 4: MUSEO DE SITIO (EX FÁBRICA LA INDUSTRIAL) -->
-            <div class="bg-slate-900/40 rounded-3xl border border-slate-800 overflow-hidden hover:border-slate-700 transition-all duration-300 flex flex-col justify-between">
+            <!-- TARJETA 4: GESTIÓN DEL AGUA Y RESIDUOS DE QUITO -->
+            <div class="bg-slate-900/40 rounded-2xl border border-slate-800 overflow-hidden hover:border-slate-700 transition-all duration-300 flex flex-col justify-between">
                 <div>
-                    <div class="relative bg-slate-950 p-1">
-                        <video class="w-full h-64 object-cover rounded-2xl" autoplay loop muted playsinline>
-                            <source src="video-sitio.mp4" type="video/mp4">
+                    <div class="relative bg-slate-950">
+                        <video class="w-full h-48 object-cover" autoplay loop muted playsinline>
+                            <source src="video-basura.mp4" type="video/mp4">
                         </video>
-                        <span class="absolute top-4 left-4 bg-slate-900/85 backdrop-blur px-3 py-1 rounded-full text-xs font-mono text-emerald-400 border border-emerald-500/30">
-                            <i class="fa-solid fa-play mr-1"></i> Video: Autoreproducción en Bucle
+                        <span class="absolute top-3 left-3 bg-slate-900/90 backdrop-blur px-2.5 py-0.5 rounded-full text-[11px] font-mono text-emerald-400 border border-emerald-500/20">
+                            Fase 4: Realidad Urbana
                         </span>
                     </div>
-                    <div class="p-6">
-                        <span class="text-[10px] font-mono uppercase tracking-widest text-indigo-400">Historia Social y Tecnología</span>
-                        <h3 class="text-2xl font-bold text-white mt-1 mb-3">Museo de Sitio: "La Industrial"</h3>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
-                            Ubicado en el corazón de Chimbacalle, este espacio conserva las turbinas, telares mecánicos e infraestructura del siglo XX de la fábrica de hilados "La Industrial" (1935-1999). El recorrido permite la inmersión multisensorial con audios del rugir de los telares y testimonios obreros. Es el escenario propicio para la mediación del entorno histórico y cultural de Quito.
+                    <div class="p-5">
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-indigo-400">Didáctica Comunitaria</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Mala Gestión de Residuos y Agua</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Módulos hidráulicos interactivos que exponen de forma empírica las consecuencias de la mala gestión del agua en la urbe. Conectado directamente con la sección sobre la basura y residuos sólidos de Quito, donde se documenta en formato de video real el funcionamiento de los sistemas mecánicos y humanos de recolección de desechos.
                         </p>
                     </div>
                 </div>
-                <div class="p-6 pt-0 border-t border-slate-800/50 mt-auto bg-slate-950/20 flex justify-between items-center text-xs font-mono text-slate-400">
-                    <span><i class="fa-solid fa-location-dot text-emerald-400 mr-1"></i> Exterior Chimbacalle</span>
-                    <span>Maquinarias: Telares de Algodón</span>
+                <div class="p-4 bg-slate-950/40 text-[11px] font-mono text-slate-500 border-t border-slate-800 flex justify-between">
+                    <span>Ecosistema Urbano</span>
+                    <span>Video: Gestión de Desechos</span>
                 </div>
             </div>
+
+            <!-- TARJETA 5: CIRCUITO DE JUEGOS Y ACERTIJOS -->
+            <div class="bg-slate-900/40 rounded-2xl border border-slate-800 overflow-hidden hover:border-slate-700 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="relative bg-slate-950">
+                        <img src="foto-acertijos.jpg" alt="Estación de Acertijos" class="w-full h-48 object-cover">
+                        <span class="absolute top-3 left-3 bg-slate-900/90 backdrop-blur px-2.5 py-0.5 rounded-full text-[11px] font-mono text-emerald-400 border border-emerald-500/20">
+                            Fase 5: Gamificación Lógica
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-indigo-400">Ludificación Epistémica</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">La Estación: Juegos Interactivos</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Circuito integral de desafíos mecánicos y lógicos orientados a la toma de decisiones ecológicas y físicas complejas: "Enredados" (redes), "Agrícola" (producción sustentable), "Servicios Básicos", "Equilibrio" (física clásica), "Juego Energético", "Atmósfera", "Somos Iguales" (inclusión), "Reciclando" y "Parche Verde".
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 bg-slate-950/40 text-[11px] font-mono text-slate-500 border-t border-slate-800 flex justify-between">
+                    <span>Módulos de Resolución</span>
+                    <span>Acertijos Psicosociales</span>
+                </div>
+            </div>
+
+            <!-- TARJETA 6: LUDIÓN Y MAQUETA -->
+            <div class="bg-slate-900/40 rounded-2xl border border-slate-800 overflow-hidden hover:border-slate-700 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="relative bg-slate-950">
+                        <video class="w-full h-48 object-cover" autoplay loop muted playsinline>
+                            <source src="video-maqueta.mp4" type="video/mp4">
+                        </video>
+                        <span class="absolute top-3 left-3 bg-slate-900/90 backdrop-blur px-2.5 py-0.5 rounded-full text-[11px] font-mono text-emerald-400 border border-emerald-500/20">
+                            Fase 6: Física y Geografía
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-indigo-400">Espacio y Movimiento</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Sala Ludión y Maqueta de Quito</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Pabellón interactivo centrado en la física en movimiento a través de balancines, poleas y cinemática interactiva. El recorrido avanza hacia la icónica maqueta tridimensional a gran escala de la ciudad de Quito, permitiendo un análisis geográfico, espacial y urbanístico completo plasmado en video.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 bg-slate-950/40 text-[11px] font-mono text-slate-500 border-t border-slate-800 flex justify-between">
+                    <span>Ala de Ciencias Físicas</span>
+                    <span>Video: Maqueta Escalar Urbana</span>
+                </div>
+            </div>
+
+            <!-- TARJETA 7: MUSEO DE SITIO INDUSTRIAL -->
+            <div class="bg-slate-900/40 rounded-2xl border border-slate-800 overflow-hidden hover:border-slate-700 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="relative bg-slate-950">
+                        <img src="foto-industrial.jpg" alt="Museo de Sitio La Industrial" class="w-full h-48 object-cover">
+                        <span class="absolute top-3 left-3 bg-slate-900/90 backdrop-blur px-2.5 py-0.5 rounded-full text-[11px] font-mono text-emerald-400 border border-emerald-500/20">
+                            Fase 7: Historia Técnica
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-indigo-400">Arqueología Industrial</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Ex Fábrica "La Industrial"</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Conservación in situ del patrimonio arquitectónico y técnico de la antigua fábrica de hilados y tejidos. La observación directa de los inmensos telares mecánicos y turbinas del siglo XX ofrece un fuerte sustrato histórico, económico y social para comprender las dinámicas laborales del barrio Chimbacalle.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 bg-slate-950/40 text-[11px] font-mono text-slate-500 border-t border-slate-800 flex justify-between">
+                    <span>Patrimonio Histórico</span>
+                    <span>Telares Mecánicos Originales</span>
+                </div>
+            </div>
+
+            <!-- TARJETA 8: SALA ANIMALES Y BIODIVERSIDAD -->
+            <div class="bg-slate-900/40 rounded-2xl border border-slate-800 overflow-hidden hover:border-slate-700 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="relative bg-slate-950">
+                        <img src="foto-biodiversidad.jpg" alt="Sala de Biodiversidad" class="w-full h-48 object-cover">
+                        <span class="absolute top-3 left-3 bg-slate-900/90 backdrop-blur px-2.5 py-0.5 rounded-full text-[11px] font-mono text-emerald-400 border border-emerald-500/20">
+                            Fase 8: Ecosistemas
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-indigo-400">Ciencias Naturales</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Módulos Biológicos y Árboles</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Inmersión pedagógica en la sala que alberga réplicas tridimensionales de animales nativos de la región andina y estructuras de árboles artificiales a gran escala. Diseñada para la conceptualización taxonómica de la flora y fauna local, enlazando la teoría científica con la ecología activa.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 bg-slate-950/40 text-[11px] font-mono text-slate-500 border-t border-slate-800 flex justify-between">
+                    <span>Pabellón Biótico</span>
+                    <span>Representaciones de Fauna</span>
+                </div>
+            </div>
+
+            <!-- TARJETA 9: PARED DE EXPRESIÓN FINAL -->
+            <div class="bg-slate-900/40 rounded-2xl border border-slate-800 overflow-hidden hover:border-slate-700 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="relative bg-slate-950">
+                        <img src="foto-pared-final.jpg" alt="Pared interactiva de expresión" class="w-full h-48 object-cover">
+                        <span class="absolute top-3 left-3 bg-slate-900/90 backdrop-blur px-2.5 py-0.5 rounded-full text-[11px] font-mono text-emerald-400 border border-emerald-500/20">
+                            Fase 9: Evaluación Libre
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-indigo-400">Didáctica dialógica</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">La Estación: Pared Colaborativa</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Cierre pedagógico de la institución compuesto por paneles explicativos de la historia del transporte ferroviario (La Estación) con siluetas humanas y una gran pared interactiva libre. En este espacio final, cada visitante tiene plena libertad de escribir y dibujar de forma abierta sus conclusiones críticas y aprendizajes consolidados.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 bg-slate-950/40 text-[11px] font-mono text-slate-500 border-t border-slate-800 flex justify-between">
+                    <span>Espacio Dialógico</span>
+                    <span>Pared de Construcción Colectiva</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- SECCIÓN 2: FUNDAMENTACIÓN TEÓRICA INTERACTIVA (Criterio: Relación con teorías 20%) -->
-    <section id="teorias" class="py-20 bg-slate-900/30 border-y border-slate-900 relative">
+    <!-- SECCIÓN 2: FUNDAMENTACIÓN METODOLÓGICA CON MODELOS EDUCATIVOS -->
+    <section id="teorias" class="py-16 bg-slate-900/30 border-y border-slate-900 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="text-xs font-mono text-emerald-400 uppercase tracking-widest bg-emerald-400/5 px-3 py-1 rounded-full border border-emerald-500/10">Marco Teórico Didáctico</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2">Relación de Experimentos con Modelos Educativos</h2>
-                <div class="w-16 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
+            <div class="text-center mb-12">
+                <span class="text-xs font-mono text-emerald-400 uppercase tracking-widest bg-emerald-400/5 px-3 py-1 rounded-full border border-emerald-500/10">Sustento Didáctico</span>
+                <h2 class="text-3xl font-extrabold text-white mt-2">Relación de la Experiencia Real con Modelos Pedagógicos</h2>
+                <div class="w-16 h-1 bg-emerald-500 mx-auto mt-3 rounded-full"></div>
             </div>
 
-            <!-- Botones Interactivos -->
-            <div class="flex flex-wrap justify-center gap-3 mb-12">
-                <button onclick="switchTab('cognitivista')" id="btn-cognitivista" class="tab-btn px-6 py-3 rounded-xl font-mono text-sm font-semibold transition-all duration-300 bg-emerald-500 text-white shadow-lg shadow-emerald-500/20">
-                    <i class="fa-solid fa-brain mr-2"></i> 1. COGNITIVISTA
+            <!-- Tabs Interactivos -->
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <button onclick="switchTab('cognitivista')" id="btn-cognitivista" class="tab-btn px-5 py-2.5 rounded-xl font-mono text-xs font-semibold transition-all duration-300 bg-emerald-500 text-white shadow-lg shadow-emerald-500/20">
+                    <i class="fa-solid fa-brain mr-2"></i> 1. ENFOQUE COGNITIVISTA
                 </button>
-                <button onclick="switchTab('constructivista')" id="btn-constructivista" class="tab-btn px-6 py-3 rounded-xl font-mono text-sm font-semibold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700">
-                    <i class="fa-solid fa-puzzle-piece mr-2"></i> 2. CONSTRUCTIVISTA
+                <button onclick="switchTab('constructivista')" id="btn-constructivista" class="tab-btn px-5 py-2.5 rounded-xl font-mono text-xs font-semibold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700">
+                    <i class="fa-solid fa-puzzle-piece mr-2"></i> 2. ENFOQUE CONSTRUCTIVISTA
                 </button>
-                <button onclick="switchTab('historico')" id="btn-historico" class="tab-btn px-6 py-3 rounded-xl font-mono text-sm font-semibold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700">
+                <button onclick="switchTab('historico')" id="btn-historico" class="tab-btn px-5 py-2.5 rounded-xl font-mono text-xs font-semibold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700">
                     <i class="fa-solid fa-people-group mr-2"></i> 3. HISTÓRICO-CULTURAL
                 </button>
             </div>
 
-            <!-- Contenido de los Tabs -->
-            <div class="max-w-4xl mx-auto bg-slate-900/60 rounded-3xl border border-slate-800 p-8 shadow-xl">
-                <!-- TAB 1: COGNITIVISMO -->
-                <div id="tab-cognitivista" class="tab-content block space-y-6">
-                    <div class="flex items-center gap-3 border-b border-slate-800 pb-4">
-                        <span class="text-emerald-400 text-3xl"><i class="fa-solid fa-microscope"></i></span>
+            <!-- Contenido Dinámico de los Tabs -->
+            <div class="max-w-4xl mx-auto bg-slate-900/60 rounded-2xl border border-slate-800 p-6 md:p-8 shadow-xl">
+                <!-- TAB COGNITIVISMO -->
+                <div id="tab-cognitivista" class="tab-content block space-y-4">
+                    <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                        <span class="text-emerald-400 text-2xl"><i class="fa-solid fa-microscope"></i></span>
                         <div>
-                            <h3 class="text-2xl font-bold text-white">Modelo Cognitivista en Sala Ludión</h3>
-                            <p class="text-xs text-slate-400 font-mono">Teóricos: David Ausubel, Jerome Bruner</p>
+                            <h3 class="text-xl font-bold text-white">Procesamiento de Información en Sala Ludión y Excesivamente</h3>
+                            <p class="text-xs text-slate-400 font-mono">Teoría: David Ausubel (Aprendizaje Significativo) y Jerome Bruner</p>
                         </div>
                     </div>
-                    <p class="text-slate-300 leading-relaxed text-base">
-                        En la sala <strong class="text-emerald-400">Ludión</strong>, el aprendizaje se origina a través del <strong class="text-indigo-400">Aprendizaje por Descubrimiento</strong> de Bruner (1961). Al manipular poleas y dinamos, el estudiante no recibe el concepto científico de manera pasiva; por el contrario, la interacción directa con el dispositivo actúa como un andamiaje que reorganiza su estructura de pensamiento.
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Los módulos cinéticos de la sala <strong class="text-emerald-400">Ludión</strong> junto a las ilusiones ópticas externas (Remolino) actúan como potentes <strong class="text-indigo-400">Organizadores Previos</strong> según Ausubel (1968). En lugar de imponer conceptos abstractos de física por memorización, las estructuras en movimiento permiten al cerebro de un estudiante universitario enlazar la experiencia fenoménica con sus estructuras cognitivas abstractas preexistentes.
                     </p>
-                    <p class="text-slate-300 leading-relaxed text-base">
-                        Este proceso genera lo que Ausubel (1968) denomina <strong class="text-emerald-400">Aprendizaje Significativo</strong>. Para que la información sobre el electromagnetismo se integre en la memoria de largo plazo del estudiante, el módulo interactivo sirve de puente cognitivo (organizador previo), anclando las teorías abstractas de la física escolar en experiencias reales y vivenciales.
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Asimismo, la sala <strong class="text-emerald-400">Excesivamente</strong>, mediante sus paneles de palabras y tablas de emociones, pone en evidencia el procesamiento metacognitivo. Al clasificar y leer los constructos de las emociones, el estudiante de educación no solo asimila un dato biológico, sino que reflexiona de manera analítica sobre sus propios procesos psicológicos internos de codificación.
                     </p>
-                    <div class="bg-slate-950 p-4 rounded-xl border-l-4 border-emerald-500 font-mono text-xs text-emerald-300">
-                        <strong>Relación Científica:</strong> La disonancia cognitiva entre la expectativa del estudiante y la reacción física del módulo estimula la reestructuración conceptual intrínseca.
+                    <div class="bg-slate-950 p-3.5 rounded-xl border-l-4 border-emerald-500 font-mono text-[11px] text-emerald-300">
+                        <strong>Aplicación Docente:</strong> La disonancia cognitiva provocada por las ilusiones ópticas externas y los sesgos del cerebro fuerza una reestructuración interna del conocimiento previo de las ciencias naturales.
                     </div>
                 </div>
 
-                <!-- TAB 2: CONSTRUCTIVISMO -->
-                <div id="tab-constructivista" class="tab-content hidden space-y-6">
-                    <div class="flex items-center gap-3 border-b border-slate-800 pb-4">
-                        <span class="text-indigo-400 text-3xl"><i class="fa-solid fa-cubes"></i></span>
+                <!-- TAB CONSTRUCTIVISMO -->
+                <div id="tab-constructivista" class="tab-content hidden space-y-4">
+                    <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                        <span class="text-indigo-400 text-2xl"><i class="fa-solid fa-cubes"></i></span>
                         <div>
-                            <h3 class="text-2xl font-bold text-white">Modelo Constructivista en Sala AWAWA</h3>
-                            <p class="text-xs text-slate-400 font-mono">Teórico: Jean Piaget</p>
+                            <h3 class="text-xl font-bold text-white">Gamificación y Conflictos Cognitivos en el Circuito de Acertijos</h3>
+                            <p class="text-xs text-slate-400 font-mono">Teoría: Jean Piaget (Asimilación, Acomodación y Equilibrio)</p>
                         </div>
                     </div>
-                    <p class="text-slate-300 leading-relaxed text-base">
-                        La sala <strong class="text-emerald-400">AWAWA</strong> es una materialización arquitectónica del constructivismo piagetiano (Piaget, 1952). Los infantes, al interactuar físicamente con los módulos de texturas y el domo biodiverso, atraviesan las fases de <strong class="text-indigo-400">Asimilación</strong> (incorporar el estímulo sensorial a esquemas ya existentes) y <strong class="text-emerald-400">Acomodación</strong> (modificar sus esquemas internos para incorporar la nueva realidad del ecosistema).
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        El circuito de desafíos lógicos interactivos de **La Estación** ("Enredados", "Agrícola", "Equilibrio", "Reciclando") constituye un entorno piagetiano adaptado a jóvenes de educación media y superior. Cada juego representa un problema estructurado de la sociedad real que no puede resolverse con respuestas automáticas, obligando al alumno a pasar por los procesos de **Asimilación** y **Acomodación** (Piaget, 1952).
                     </p>
-                    <p class="text-slate-300 leading-relaxed text-base">
-                        De acuerdo con Piaget, el desarrollo precede al aprendizaje. Por ello, esta sala respeta el estadio sensorio-motor y preoperacional del niño, propiciando que el conocimiento sobre los seres vivos de Quito se construya dinámicamente mediante la autogestión de la curiosidad activa en un entorno seguro de exploración.
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        El estudiante manipula activamente variables de servicios básicos, producción agrícola o energía. Al fallar en el equilibrio mecánico o errar en la estrategia del acertijo ecológico, se produce un conflicto cognitivo que rompe el equilibrio conceptual estático del sujeto, motivándolo a autogestionar y ensayar soluciones lógicas viables por descubrimiento autónomo.
                     </p>
-                    <div class="bg-slate-950 p-4 rounded-xl border-l-4 border-indigo-500 font-mono text-xs text-indigo-300">
-                        <strong>Relación Científica:</strong> El conocimiento no es una copia de la realidad, sino una reconstrucción del sujeto a partir de su acción motora sobre los objetos del entorno.
+                    <div class="bg-slate-950 p-3.5 rounded-xl border-l-4 border-indigo-500 font-mono text-[11px] text-indigo-300">
+                        <strong>Aplicación Docente:</strong> El error sistemático en el acertijo interactivo no se penaliza, sino que se valida didácticamente como el motor fundamental del autodescubrimiento lógico y la autonomía intelectual.
                     </div>
                 </div>
 
-                <!-- TAB 3: HISTÓRICO-CULTURAL -->
-                <div id="tab-historico" class="tab-content hidden space-y-6">
-                    <div class="flex items-center gap-3 border-b border-slate-800 pb-4">
-                        <span class="text-teal-400 text-3xl"><i class="fa-solid fa-landmark"></i></span>
+                <!-- TAB HISTÓRICO-CULTURAL -->
+                <div id="tab-historico" class="tab-content hidden space-y-4">
+                    <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                        <span class="text-teal-400 text-2xl"><i class="fa-solid fa-people-group"></i></span>
                         <div>
-                            <h3 class="text-2xl font-bold text-white">Socio-Constructivismo en el Museo de Sitio</h3>
-                            <p class="text-xs text-slate-400 font-mono">Teórico: Lev Vygotsky</p>
+                            <h3 class="text-xl font-bold text-white">Mediación Semiótica en la Conferencia Climática y Museo de Sitio</h3>
+                            <p class="text-xs text-slate-400 font-mono">Teoría: Lev Vygotsky (ZDP e Instrumentos Culturales)</p>
                         </div>
                     </div>
-                    <p class="text-slate-300 leading-relaxed text-base">
-                        La visita al <strong class="text-emerald-400">Museo de Sitio</strong> (la ex fábrica de hilados y tejidos "La Industrial") evidencia de forma idónea el enfoque <strong class="text-indigo-400">Histórico-Cultural</strong> de Vygotsky (1978). El aprendizaje está mediado por la cultura y el uso de instrumentos semióticos. Las grandes maquinarias y el ambiente fabril de Chimbacalle funcionan como herramientas de mediación social.
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        El bloque de crisis ecológica (Cuenta Regresiva, Chimeneas, paneles de recolección de basura urbana) y el **Museo de Sitio** (máquinas industriales textiles de Chimbacalle) representan la cumbre del enfoque sociocultural de Vygotsky (1978). El aprendizaje de las ciencias sociales y técnicas no está aislado del contexto socio-histórico y comunitario de la urbe quiteña.
                     </p>
-                    <p class="text-slate-300 leading-relaxed text-base">
-                        La guía del docente o el mediador del museo actúa dentro de la <strong class="text-emerald-400">Zona de Desarrollo Próximo (ZDP)</strong> de los alumnos, dinamizando el andamiaje necesario para que un vestigio del siglo XX cobre un significado histórico-social integrado. La interacción social y el diálogo cooperativo en la visita de campo consolidan funciones psicológicas superiores en el estudiante.
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        La cuenta regresiva digital, la infografía de emisión de gases y las grandes maquinarias del siglo XX actúan como **herramientas semióticas de mediación social**. Finalmente, la **Pared Interactiva Colectiva** plasma el principio dialógico central: el conocimiento se origina primero a nivel social e interpsicológico mediante la escritura pública y el debate de las ideas, antes de convertirse en un aprendizaje individual internalizado de forma intrapsicológica.
                     </p>
-                    <div class="bg-slate-950 p-4 rounded-xl border-l-4 border-teal-500 font-mono text-xs text-teal-300">
-                        <strong>Relación Científica:</strong> Los procesos psicológicos superiores se originan primero a nivel social (interpsicológico) antes de ser internalizados por el individuo (intrapsicológico).
+                    <div class="bg-slate-950 p-3.5 rounded-xl border-l-4 border-teal-500 font-mono text-[11px] text-teal-300">
+                        <strong>Aplicación Docente:</strong> La pared de libre expresión final democratiza el espacio evaluativo de la institución, transformando a los visitantes en coautores y críticos activos del saber histórico-social expuesto.
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN 3: ANÁLISIS CRÍTICO (Criterio: Análisis Crítico 15% & Redacción 10%) -->
-    <section id="analisis" class="py-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <span class="text-xs font-mono text-indigo-400 uppercase tracking-widest bg-indigo-400/5 px-3 py-1 rounded-full border border-indigo-500/10">Ensayo Crítico Científico</span>
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2">La Pedagogía del Asombro vs. El Aula Tradicional</h2>
-            <div class="w-16 h-1 bg-indigo-500 mx-auto mt-4 rounded-full"></div>
+    <!-- SECCIÓN 3: ENSAYO CRÍTICO PROFUNDO -->
+    <section id="analisis" class="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <span class="text-xs font-mono text-indigo-400 uppercase tracking-widest bg-indigo-400/5 px-3 py-1 rounded-full border border-indigo-500/10">Reflexión Epistemológica</span>
+            <h2 class="text-3xl font-extrabold text-white mt-2">Didáctica Crítica y Concientización en Espacios Científicos</h2>
+            <div class="w-16 h-1 bg-indigo-500 mx-auto mt-3 rounded-full"></div>
         </div>
 
-        <article class="prose prose-invert prose-emerald max-w-none space-y-6 text-slate-300 text-base leading-relaxed">
+        <article class="space-y-6 text-slate-300 text-sm md:text-base leading-relaxed text-justify">
             <p>
-                La educación formal contemporánea en el Ecuador a menudo sufre de un excesivo apego al texto estático, relegando el aprendizaje de las ciencias naturales y físicas a la abstracción verbalista. El análisis del <strong class="text-white">Museo Interactivo de Ciencias (MIC)</strong> como recurso para la didáctica escolar nos revela la urgencia de realizar una verdadera <strong class="text-emerald-400">transposición didáctica</strong>, es decir, el proceso mediante el cual el saber sabio es transformado en saber enseñado de manera comprensible y motivadora para el estudiante (Chevallard, 1991).
-            </p>
-
-            <div class="grid md:grid-cols-2 gap-6 my-8">
-                <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
-                    <h4 class="text-white font-bold mb-2 flex items-center gap-2">
-                        <i class="fa-solid fa-school text-rose-400"></i> Aula Tradicional Pasiva
-                    </h4>
-                    <p class="text-sm text-slate-400 leading-relaxed">
-                        Centrada en la memorización de fórmulas mecánicas o definiciones biológicas sin correspondencia sensorial directa. Se reduce al estudiante a un receptor pasivo, impidiendo el anclaje cognitivo y limitando el desarrollo de la metacognición.
-                    </p>
-                </div>
-                <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
-                    <h4 class="text-white font-bold mb-2 flex items-center gap-2">
-                        <i class="fa-solid fa-hands-holding-child text-emerald-400"></i> Espacio Interactivo de Campo (MIC)
-                    </h4>
-                    <p class="text-sm text-slate-400 leading-relaxed">
-                        Usa el juego libre, el error sistemático seguro y la inmersión contextual de Chimbacalle. Despierta el interés a través de la estimulación sensorial e incentiva procesos lógicos superiores que favorecen la asimilación profunda de las teorías científicas.
-                    </p>
-                </div>
-            </div>
-
-            <p class="italic border-l-2 border-emerald-500 pl-4 py-1 text-slate-400">
-                "El museo de ciencias interactivo no busca dar respuestas terminadas, sino sembrar dudas heurísticas. Desde la didáctica crítica, el asombro provocado por el experimento actúa como el motor biológico y social para la formulación de hipótesis científicas propias."
+                La didáctica en la formación docente tradicional ecuatoriana suele encasillarse en la transmisión lineal de contenidos descriptivos dentro de cuatro paredes. La inmersión en el <strong class="text-white">Museo Interactivo de Ciencias (MIC)</strong> resignifica por completo el concepto de <strong class="text-emerald-400">transposición didáctica</strong> expuesto por Yves Chevallard (1991), evidenciando que el conocimiento científico adquiere verdadera relevancia cuando abandona el carácter estático del manual escolar y se somete a la experimentación empírica directa y contextualizada.
             </p>
 
             <p>
-                A la luz de la <strong class="text-white">Teoría de la Mediación Semiótica</strong>, los módulos interactivos del MIC actúan no como meros juguetes, sino como mediadores instrumentales que exteriorizan la lógica de los phenomena. Cuando el estudiante se sumerge en el registro auditivo del <strong class="text-indigo-400">Museo de Sitio</strong>, la aproximación histórica e industrial de Quito deja de ser un párrafo memorizado de ciencias sociales y pasa a ser un fenómeno socio-cultural asimilado activamente. La contextualización territorial que ofrece Chimbacalle actúa como la base material para el desarrollo del pensamiento crítico de nuestra juventud.
+                El recorrido analizado demuestra que los espacios interactivos no son meros dinamizadores de entretenimiento recreativo. Por ejemplo, al confrontar de frente la **cuenta regresiva del calentamiento global** o interactuar con el video de la **gestión y recolección de basura en Quito**, el estudiante universitario de educación no solo procesa datos estadísticos abstractos; se somete a un riguroso proceso de concientización social y ecológica. Esto vincula de forma directa la pedagogía con la realidad comunitaria de Chimbacalle y el Distrito Metropolitano, promoviendo el pensamiento crítico indispensable en la educación contemporánea.
             </p>
 
-            <div class="p-6 bg-slate-900/30 rounded-3xl border border-emerald-500/20 text-slate-300 mt-8">
-                <h4 class="text-white font-bold mb-2">Conclusión Didáctica Final</h4>
-                <p class="text-sm">
-                    Para consolidar un aprendizaje que dure toda la vida, los docentes debemos concebir la visita al MIC no como un día de recreación informal o un "paseo libre de tareas", sino como un laboratorio de investigación guiada. Debe planificarse una secuencia didáctica rigurosa: antes (activación de conocimientos previos de Ausubel), durante (andamiaje interactivo y mediación de Vygotsky) y después (sintetización y reestructuración cognitivista del nuevo esquema conceptual).
-                </p>
+            <div class="p-5 bg-slate-900/50 rounded-2xl border border-slate-800 font-mono text-xs text-slate-400 my-6">
+                <span class="text-white font-bold block mb-1"><i class="fa-solid fa-circle-info text-indigo-400 mr-1"></i> Contraste Epistémico para el Futuro Docente</span>
+                Mientras el aula convencional tiende a la abstracción verbalista de las problemáticas (como leer un libro de texto sobre las emisiones de gases), el entorno del MIC utiliza la mediación multisensorial y el circuito de acertijos socioambientales para forzar al alumno a tomar decisiones críticas y evaluar el impacto real de sus acciones sobre el ecosistema urbano.
             </div>
+
+            <p>
+                Finalmente, la estructura del museo cierra de forma impecable con la **Pared de Expresión Colectiva**. Desde la didáctica dialógica y crítica, este muro de libre escritura representa la ruptura con el modelo bancario tradicional de la educación. Se le otorga la palabra y la tiza al alumno para que deje de ser un mero espectador pasivo de la ciencia y se consolide como un agente social con voz propia, capaz de sistematizar, graficar y exteriorización de manera autónoma sus reflexiones pedagógicas finales.
+            </p>
         </article>
     </section>
 
-    <!-- SECCIÓN 4: REFERENCIAS (Criterio: Fuentes y referencias 10% & Ortografía 10%) -->
-    <footer id="bibliografia" class="bg-slate-950 border-t border-slate-900 py-16">
+    <!-- SECCIÓN 4: REFERENCIAS CIENTÍFICAS (NORMAS APA 7) -->
+    <footer id="bibliografia" class="bg-slate-950 border-t border-slate-900 py-12">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="mb-8">
-                <h3 class="text-xl font-bold text-white flex items-center gap-2">
+            <div class="mb-6">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
                     <i class="fa-solid fa-book text-emerald-400"></i> Referencias Bibliográficas (Normas APA 7ª Edición)
                 </h3>
                 <div class="w-12 h-[2px] bg-emerald-500 mt-2"></div>
             </div>
 
-            <div class="space-y-4 text-xs font-mono text-slate-400">
+            <div class="space-y-3 text-xs font-mono text-slate-400">
                 <p class="pl-8 -indent-8">Ausubel, D. P. (1968). <span class="italic">Educational Psychology: A Cognitive View</span>. Holt, Rinehart and Winston.</p>
                 <p class="pl-8 -indent-8">Bruner, J. S. (1961). The act of discovery. <span class="italic">Harvard Educational Review</span>, 31(1), 21-32.</p>
-                <p class="pl-8 -indent-8">Chevallard, Y. (1991). <span class="italic">La transposición didáctica: Del saber sabio al saber enseñado</span>. Aique Grupo Editor.</p>
-                <p class="pl-8 -indent-8">Museo Interactivo de Ciencia [MIC]. (2026). <span class="italic">Exposiciones permanentes y pedagogía de las emociones en Chimbacalle</span>. Fundación Museos de la Ciudad.</p>
+                <p class="pl-8 -indent-8"><span>Chevallard, Y. (1991). <span class="italic">La transposición didáctica: Del saber sabio al saber enseñado</span>. Aique Grupo Editor.</span></p>
+                <p class="pl-8 -indent-8">Museo Interactivo de Ciencia [MIC]. (2026). <span class="italic">Exposiciones permanentes, eje ambiental y arqueología industrial en Chimbacalle</span>. Fundación Museos de la Ciudad.</p>
                 <p class="pl-8 -indent-8">Piaget, J. (1952). <span class="italic">The Origins of Intelligence in Children</span>. International Universities Press.</p>
                 <p class="pl-8 -indent-8">Vygotsky, L. S. (1978). <span class="italic">Mind in Society: The Development of Higher Psychological Processes</span>. Harvard University Press.</p>
             </div>
@@ -393,7 +484,7 @@
         </div>
     </footer>
 
-    <!-- SCRIPTS -->
+    <!-- SCRIPTS DE INTERACCIÓN -->
     <script>
         function switchTab(tabId) {
             const contents = document.querySelectorAll('.tab-content');
@@ -401,8 +492,8 @@
             document.getElementById('tab-' + tabId).classList.replace('hidden', 'block');
 
             const buttons = document.querySelectorAll('.tab-btn');
-            buttons.forEach(button => button.className = "tab-btn px-6 py-3 rounded-xl font-mono text-sm font-semibold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700");
-            document.getElementById('btn-' + tabId).className = "tab-btn px-6 py-3 rounded-xl font-mono text-sm font-semibold transition-all duration-300 bg-emerald-500 text-white shadow-lg shadow-emerald-500/20";
+            buttons.forEach(button => button.className = "tab-btn px-5 py-2.5 rounded-xl font-mono text-xs font-semibold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700");
+            document.getElementById('btn-' + tabId).className = "tab-btn px-5 py-2.5 rounded-xl font-mono text-xs font-semibold transition-all duration-300 bg-emerald-500 text-white shadow-lg shadow-emerald-500/20";
         }
 
         window.addEventListener('scroll', () => {
